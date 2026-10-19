@@ -83,8 +83,8 @@ Pipeline steps:
 
 ![GitHub Actions run](docs/images/fig5_ci_run.png)
 
-- Last successful run: https://github.com/guanyuanpeterpan/hdu-is-work1-api/actions/runs/39197566103
-- Run ID: `39197566103`, job ID `117883519461`. Status: success, duration 21 s.
+- Last successful run: https://github.com/guanyuanpeterpan/hdu-is-work1-api/actions/runs/39197632420
+- Run ID: `39197632420`, job ID `117883718872`. Status: success, duration 21 s.
 
 ### SAST and SCA reports
 
