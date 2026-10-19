@@ -1,0 +1,360 @@
+Security Scanners & Unit Tests	Set up job	﻿2026-10-19T03:50:36.2931469Z Current runner version: '2.337.0'
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.2988977Z ##[group]Runner Image Provisioner
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.2990407Z Hosted Compute Agent
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.2991452Z Version: 20261012.601
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.2992716Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.2994037Z Build Date: 2026-10-12T17:48:21Z
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.2995397Z Worker ID: {25ffdfd8-e574-4c26-b2cb-f950fe930f0e}
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.2997073Z Region: westus2
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.2998145Z Cloud: Azure
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.2999293Z ##[endgroup]
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3001867Z ##[group]Operating System
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3003146Z Ubuntu
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3004111Z 24.04.5
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3005055Z LTS
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3006085Z ##[endgroup]
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3007439Z ##[group]Runner Image
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3008689Z Image: ubuntu-24.04
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3009766Z Version: 20261012.334.1
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3011839Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3015023Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3017976Z ##[endgroup]
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3020221Z ##[group]GITHUB_TOKEN Permissions
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3023473Z Contents: read
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3024511Z Metadata: read
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3025484Z Packages: read
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3026888Z ##[endgroup]
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3030041Z Secret source: Actions
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3031839Z Cache mode: write
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3033426Z Prepare workflow directory
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3496441Z Prepare all required actions
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.3544066Z Getting action download info
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.7048460Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.8288767Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:36.9187619Z Download action repository 'astral-sh/setup-uv@v5' (SHA:d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86)
+Security Scanners & Unit Tests	Set up job	2026-10-19T03:50:37.3578120Z Complete job name: Security Scanners & Unit Tests
+Security Scanners & Unit Tests	Checkout Source Code	﻿2026-10-19T03:50:37.4364346Z ##[group]Run actions/checkout@v4
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.4365284Z with:
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.4365786Z   repository: guanyuanpeterpan/hdu-is-work1-api
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.4370072Z   token: ***
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.4370515Z   ssh-strict: true
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.4370954Z   ssh-user: git
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.4371398Z   persist-credentials: true
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.4371887Z   clean: true
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.4372328Z   sparse-checkout-cone-mode: true
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.4372852Z   fetch-depth: 1
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.4373281Z   fetch-tags: false
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.4373717Z   show-progress: true
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.4374166Z   lfs: false
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.4374567Z   submodules: false
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.4375014Z   set-safe-directory: true
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.4375516Z   allow-unsafe-pr-checkout: false
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.4376433Z ##[endgroup]
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.5536016Z Syncing repository: guanyuanpeterpan/hdu-is-work1-api
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.5539890Z ##[group]Getting Git version info
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.5543656Z Working directory is '/home/runner/work/hdu-is-work1-api/hdu-is-work1-api'
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.5597720Z [command]/usr/bin/git version
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.5839056Z git version 2.55.0
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.5845662Z ##[endgroup]
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.5853786Z Temporarily overriding HOME='/home/runner/work/_temp/fe02ee85-96d8-4876-800e-8bf6c52a1186' before making global git config changes
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.5856051Z Adding repository directory to the temporary git global config as a safe directory
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.5858501Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/hdu-is-work1-api/hdu-is-work1-api
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.5959790Z Deleting the contents of '/home/runner/work/hdu-is-work1-api/hdu-is-work1-api'
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.5987983Z ##[group]Initializing the repository
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6008660Z [command]/usr/bin/git init /home/runner/work/hdu-is-work1-api/hdu-is-work1-api
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6153522Z hint: Using 'master' as the name for the initial branch. This default branch name
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6155701Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6157463Z hint: to use in all of your new repositories, which will suppress this warning,
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6161559Z hint: call:
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6163157Z hint:
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6164306Z hint: 	git config --global init.defaultBranch <name>
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6166065Z hint:
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6167663Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6169885Z hint: 'development'. The just-created branch can be renamed via this command:
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6171585Z hint:
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6173069Z hint: 	git branch -m <name>
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6174456Z hint:
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6176671Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6180672Z Initialized empty Git repository in /home/runner/work/hdu-is-work1-api/hdu-is-work1-api/.git/
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6184034Z [command]/usr/bin/git remote add origin https://github.com/guanyuanpeterpan/hdu-is-work1-api
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6400396Z ##[endgroup]
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6402047Z ##[group]Disabling automatic garbage collection
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6403974Z [command]/usr/bin/git config --local gc.auto 0
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6410135Z ##[endgroup]
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6411392Z ##[group]Setting up auth
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6412601Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6419092Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6985792Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.6995541Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.7240915Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.7271459Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.7523085Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.7567896Z ##[endgroup]
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.7569908Z ##[group]Fetching the repository
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:37.7579358Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +cacb5c33e48331229f43429c03afc12e59895014:refs/remotes/origin/master
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:38.0788842Z From https://github.com/guanyuanpeterpan/hdu-is-work1-api
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:38.0792436Z  * [new ref]         cacb5c33e48331229f43429c03afc12e59895014 -> origin/master
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:38.0798756Z ##[endgroup]
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:38.0816116Z ##[group]Determining the checkout info
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:38.0818931Z ##[endgroup]
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:38.0820357Z [command]/usr/bin/git sparse-checkout disable
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:38.0848879Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:38.0938208Z ##[group]Checking out the ref
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:38.0943032Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:38.1059540Z Reset branch 'master'
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:38.1066982Z branch 'master' set up to track 'origin/master'.
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:38.1080724Z ##[endgroup]
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:38.1126144Z [command]/usr/bin/git log -1 --format=%H
+Security Scanners & Unit Tests	Checkout Source Code	2026-10-19T03:50:38.1157840Z cacb5c33e48331229f43429c03afc12e59895014
+Security Scanners & Unit Tests	Set up Python 3.12	﻿2026-10-19T03:50:38.1528508Z ##[group]Run actions/setup-python@v5
+Security Scanners & Unit Tests	Set up Python 3.12	2026-10-19T03:50:38.1529464Z with:
+Security Scanners & Unit Tests	Set up Python 3.12	2026-10-19T03:50:38.1530241Z   python-version: 3.12
+Security Scanners & Unit Tests	Set up Python 3.12	2026-10-19T03:50:38.1530917Z   check-latest: false
+Security Scanners & Unit Tests	Set up Python 3.12	2026-10-19T03:50:38.1541592Z   token: ***
+Security Scanners & Unit Tests	Set up Python 3.12	2026-10-19T03:50:38.1542216Z   update-environment: true
+Security Scanners & Unit Tests	Set up Python 3.12	2026-10-19T03:50:38.1542955Z   allow-prereleases: false
+Security Scanners & Unit Tests	Set up Python 3.12	2026-10-19T03:50:38.1543663Z   freethreaded: false
+Security Scanners & Unit Tests	Set up Python 3.12	2026-10-19T03:50:38.1544283Z ##[endgroup]
+Security Scanners & Unit Tests	Set up Python 3.12	2026-10-19T03:50:38.3046900Z ##[group]Installed versions
+Security Scanners & Unit Tests	Set up Python 3.12	2026-10-19T03:50:38.3176539Z (node:2060) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Security Scanners & Unit Tests	Set up Python 3.12	2026-10-19T03:50:38.3180445Z Successfully set up CPython (3.12.15)
+Security Scanners & Unit Tests	Set up Python 3.12	2026-10-19T03:50:38.3182705Z ##[endgroup]
+Security Scanners & Unit Tests	Set up Python 3.12	2026-10-19T03:50:38.3223043Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Security Scanners & Unit Tests	Install uv	﻿2026-10-19T03:50:38.4065508Z ##[group]Run astral-sh/setup-uv@v5
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:38.4085851Z with:
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:38.4087308Z   version: latest
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:38.4123456Z   github-token: ***
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:38.4124601Z   enable-cache: auto
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:38.4126097Z   cache-dependency-glob: **/uv.lock
+Security Scanners & Unit Tests	Install uv	**/requirements*.txt
+Security Scanners & Unit Tests	Install uv	
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:38.4128179Z   prune-cache: true
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:38.4129352Z   ignore-nothing-to-cache: false
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:38.4130781Z   ignore-empty-workdir: false
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:38.4132006Z env:
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:38.4133265Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:38.4135804Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:38.4170943Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:38.4173178Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:38.4175386Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:38.4177892Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:38.4179799Z ##[endgroup]
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:38.6189701Z (node:2069) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:38.6252137Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:38.9523233Z Downloading uv from "https://github.com/astral-sh/uv/releases/download/0.13.1/uv-x86_64-unknown-linux-gnu.tar.gz" ...
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:39.3024884Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/2e12474a-6feb-45bd-8d7a-518e79a3eb6c -f /home/runner/work/_temp/c0015f37-d7d3-43fc-852b-15a0bbad46aa
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:39.7247823Z Added /home/runner/.local/bin to the path
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:39.7251563Z Added /opt/hostedtoolcache/uv/0.13.1/x86_64 to the path
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:39.7265446Z Set UV_CACHE_DIR to /home/runner/work/_temp/setup-uv-cache
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:39.7268178Z Successfully installed uv version 0.13.1
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:39.7270549Z Searching files using cache dependency glob: **/uv.lock,**/requirements*.txt
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:39.7573912Z /home/runner/work/hdu-is-work1-api/hdu-is-work1-api/uv.lock
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:39.7594893Z Found 1 files to hash.
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:39.9065955Z Trying to restore uv cache from GitHub Actions cache with key: setup-uv-1-x86_64-unknown-linux-gnu-3.12.15-2ae0c6a85117b463f515eeed92ae18404b0e2efa0ad69d18c110fd1d45d986da
+Security Scanners & Unit Tests	Install uv	2026-10-19T03:50:40.1348824Z No GitHub Actions cache found for key: setup-uv-1-x86_64-unknown-linux-gnu-3.12.15-2ae0c6a85117b463f515eeed92ae18404b0e2efa0ad69d18c110fd1d45d986da
+Security Scanners & Unit Tests	Install Project Dependencies	﻿2026-10-19T03:50:40.1524779Z ##[group]Run uv sync
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:40.1525205Z ^[[36;1muv sync^[[0m
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:40.1843356Z shell: /usr/bin/bash -e {0}
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:40.1843804Z env:
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:40.1844252Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:40.1844965Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:40.1845728Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:40.1846572Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:40.1847238Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:40.1848168Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:40.1848789Z   UV_CACHE_DIR: /home/runner/work/_temp/setup-uv-cache
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:40.1849291Z ##[endgroup]
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:40.2055380Z Using CPython 3.12.15 interpreter at: /opt/hostedtoolcache/Python/3.12.15/x64/bin/python3
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:40.2056644Z Creating virtual environment at: .venv
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:40.2072568Z Resolved 53 packages in 0.78ms
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:42.5319468Z Downloading pydantic-core (2.1MiB)
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:42.7930928Z Downloading pip (1.7MiB)
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:42.9376784Z Downloading pygments (1.2MiB)
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.0714150Z  Downloaded pydantic-core
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1273759Z  Downloaded pip
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1386631Z  Downloaded pygments
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1387546Z Prepared 51 packages in 2.93s
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1834054Z Installed 51 packages in 43ms
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1836638Z  + annotated-doc==0.0.5
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1837468Z  + annotated-types==0.8.0
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1838313Z  + anyio==4.15.1
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1838863Z  + bandit==1.9.4
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1839404Z  + bcrypt==5.0.0
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1839999Z  + boolean-py==5.0
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1840634Z  + cachecontrol==0.14.4
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1841353Z  + certifi==2026.10.18
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1841990Z  + charset-normalizer==3.5.2
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1842609Z  + click==8.5.0
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1843292Z  + cyclonedx-python-lib==11.12.0
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1853049Z  + defusedxml==0.7.1
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1853691Z  + fastapi==0.146.0
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1854252Z  + filelock==4.2.4
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1854791Z  + h11==0.16.0
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1855348Z  + httpcore==1.0.9
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1855886Z  + httpx==0.28.1
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1856890Z  + idna==3.20
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1857527Z  + iniconfig==2.3.1
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1858176Z  + license-expression==30.4.4
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1858858Z  + markdown-it-py==4.2.0
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1859551Z  + mdurl==0.1.2
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1860163Z  + msgpack==1.2.3
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1860821Z  + opentelemetry-api==1.45.1
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1861546Z  + packageurl-python==0.17.6
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1862275Z  + packaging==26.3
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1862930Z  + pip==26.2.1
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1863553Z  + pip-api==0.0.35
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1864198Z  + pip-audit==2.10.1
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1864866Z  + pip-requirements-parser==32.0.1
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1865603Z  + platformdirs==4.13.5
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1866530Z  + pluggy==1.7.0
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1867296Z  + py-serializable==2.1.0
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1867871Z  + pydantic==2.14.1
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1868440Z  + pydantic-core==2.50.1
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1868992Z  + pygments==2.21.0
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1869490Z  + pyjwt==2.15.1
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1869984Z  + pyparsing==3.3.3
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1870480Z  + pytest==9.1.1
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1870956Z  + pyyaml==6.0.3
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1871438Z  + requests==2.34.2
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1871937Z  + rich==15.0.0
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1872451Z  + sortedcontainers==2.4.0
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1873011Z  + starlette==1.9.0
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1873513Z  + stevedore==5.9.1
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1874011Z  + tomli==2.5.0
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1874503Z  + tomli-w==1.2.0
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1875017Z  + typing-extensions==4.16.0
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1875593Z  + typing-inspection==0.4.4
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1876138Z  + urllib3==2.8.0
+Security Scanners & Unit Tests	Install Project Dependencies	2026-10-19T03:50:43.1877878Z  + uvicorn==0.54.0
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	﻿2026-10-19T03:50:43.1940767Z ##[group]Run uv run pytest -v
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:43.1941101Z ^[[36;1muv run pytest -v^[[0m
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:43.2006120Z shell: /usr/bin/bash -e {0}
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:43.2006693Z env:
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:43.2006973Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:43.2007420Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:43.2007860Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:43.2008242Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:43.2008621Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:43.2009200Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:43.2009607Z   UV_CACHE_DIR: /home/runner/work/_temp/setup-uv-cache
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:43.2009903Z ##[endgroup]
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:46.0010369Z ============================= test session starts ==============================
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:46.0011973Z platform linux -- Python 3.12.15, pytest-9.1.1, pluggy-1.7.0 -- /home/runner/work/hdu-is-work1-api/hdu-is-work1-api/.venv/bin/python
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:46.0013673Z cachedir: .pytest_cache
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:46.0014537Z rootdir: /home/runner/work/hdu-is-work1-api/hdu-is-work1-api
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:46.0015479Z configfile: pyproject.toml
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:46.0016564Z plugins: platformdirs-4.13.5, anyio-4.15.1
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:46.0304904Z collecting ... collected 12 items
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:46.0305569Z 
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:46.8466801Z tests/test_articles.py::test_create_article_unauthorized PASSED          [  8%]
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:47.1540521Z tests/test_articles.py::test_create_article_success PASSED               [ 16%]
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:47.7103292Z tests/test_articles.py::test_sqli_protection PASSED                      [ 25%]
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:47.9911464Z tests/test_articles.py::test_xss_protection PASSED                       [ 33%]
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:48.2669174Z tests/test_auth.py::test_login_success PASSED                            [ 41%]
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:48.5436911Z tests/test_auth.py::test_login_wrong_password PASSED                     [ 50%]
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:48.5503117Z tests/test_auth.py::test_login_nonexistent_user PASSED                   [ 58%]
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:48.5570129Z tests/test_auth.py::test_expired_token_rejection PASSED                  [ 66%]
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:48.8370400Z tests/test_auth.py::test_tampered_token_rejection PASSED                 [ 75%]
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:48.8430288Z tests/test_data.py::test_get_data_unauthorized PASSED                    [ 83%]
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:48.8488399Z tests/test_data.py::test_get_data_invalid_scheme PASSED                  [ 91%]
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:49.1694704Z tests/test_data.py::test_get_data_authorized PASSED                      [100%]
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:49.1695790Z 
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:49.1696654Z =============================== warnings summary ===============================
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:49.1697779Z .venv/lib/python3.12/site-packages/fastapi/testclient.py:1
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:49.1700148Z   /home/runner/work/hdu-is-work1-api/hdu-is-work1-api/.venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:49.1702799Z     from starlette.testclient import TestClient as TestClient  # noqa
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:49.1703687Z 
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:49.1705012Z -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+Security Scanners & Unit Tests	Run Automated Tests (pytest)	2026-10-19T03:50:49.1706152Z ======================== 12 passed, 1 warning in 3.13s =========================
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	﻿2026-10-19T03:50:49.2530799Z ##[group]Run uv run bandit -r app/ -v
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.2531189Z ^[[36;1muv run bandit -r app/ -v^[[0m
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.2596924Z shell: /usr/bin/bash -e {0}
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.2597183Z env:
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.2597452Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.2597897Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.2598330Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.2598727Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.2599114Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.2599502Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.2599878Z   UV_CACHE_DIR: /home/runner/work/_temp/setup-uv-cache
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.2600181Z ##[endgroup]
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5532626Z [main]	INFO	profile include tests: None
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5533741Z [main]	INFO	profile exclude tests: None
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5542669Z [main]	INFO	cli include tests: None
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5543940Z [main]	INFO	cli exclude tests: None
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5544738Z [main]	INFO	running on Python 3.12.15
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5775804Z Run started:2026-10-19 03:50:49.577378+00:00
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5776762Z Files in scope (5):
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5777459Z 	app/__init__.py (score: {SEVERITY: 0, CONFIDENCE: 0})
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5778301Z 	app/database.py (score: {SEVERITY: 0, CONFIDENCE: 0})
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5779063Z 	app/main.py (score: {SEVERITY: 0, CONFIDENCE: 0})
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5779796Z 	app/models.py (score: {SEVERITY: 0, CONFIDENCE: 0})
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5780533Z 	app/security.py (score: {SEVERITY: 0, CONFIDENCE: 0})
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5781196Z Files excluded (5):
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5781744Z 	app/__pycache__/__init__.cpython-312.pyc
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5782457Z 	app/__pycache__/database.cpython-312.pyc
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5783103Z 	app/__pycache__/main.cpython-312.pyc
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5783721Z 	app/__pycache__/models.cpython-312.pyc
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5784526Z 	app/__pycache__/security.cpython-312.pyc
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5785028Z 
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5785334Z Test results:
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5785813Z 	No issues identified.
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5786516Z 
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5786886Z Code scanned:
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5787375Z 	Total lines of code: 272
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5787933Z 	Total lines skipped (#nosec): 0
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5788776Z 	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5789525Z 
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5789823Z Run metrics:
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5790309Z 	Total issues (by severity):
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5790987Z 		Undefined: 0
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5799203Z 		Low: 0
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5799733Z 		Medium: 0
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5800242Z 		High: 0
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5800768Z 	Total issues (by confidence):
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5801383Z 		Undefined: 0
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5801882Z 		Low: 0
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5802364Z 		Medium: 0
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5802823Z 		High: 0
+Security Scanners & Unit Tests	Run Static Application Security Testing (SAST - Bandit)	2026-10-19T03:50:49.5803283Z Files skipped (0):
+Security Scanners & Unit Tests	Run Software Composition Analysis (SCA - pip-audit)	﻿2026-10-19T03:50:49.6080440Z ##[group]Run uv run pip-audit
+Security Scanners & Unit Tests	Run Software Composition Analysis (SCA - pip-audit)	2026-10-19T03:50:49.6081013Z ^[[36;1muv run pip-audit^[[0m
+Security Scanners & Unit Tests	Run Software Composition Analysis (SCA - pip-audit)	2026-10-19T03:50:49.6178290Z shell: /usr/bin/bash -e {0}
+Security Scanners & Unit Tests	Run Software Composition Analysis (SCA - pip-audit)	2026-10-19T03:50:49.6178743Z env:
+Security Scanners & Unit Tests	Run Software Composition Analysis (SCA - pip-audit)	2026-10-19T03:50:49.6179229Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Run Software Composition Analysis (SCA - pip-audit)	2026-10-19T03:50:49.6180023Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+Security Scanners & Unit Tests	Run Software Composition Analysis (SCA - pip-audit)	2026-10-19T03:50:49.6180827Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Run Software Composition Analysis (SCA - pip-audit)	2026-10-19T03:50:49.6181540Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Run Software Composition Analysis (SCA - pip-audit)	2026-10-19T03:50:49.6182237Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Security Scanners & Unit Tests	Run Software Composition Analysis (SCA - pip-audit)	2026-10-19T03:50:49.6183055Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+Security Scanners & Unit Tests	Run Software Composition Analysis (SCA - pip-audit)	2026-10-19T03:50:49.6183731Z   UV_CACHE_DIR: /home/runner/work/_temp/setup-uv-cache
+Security Scanners & Unit Tests	Run Software Composition Analysis (SCA - pip-audit)	2026-10-19T03:50:49.6184269Z ##[endgroup]
+Security Scanners & Unit Tests	Run Software Composition Analysis (SCA - pip-audit)	2026-10-19T03:50:51.7616056Z No known vulnerabilities found
+Security Scanners & Unit Tests	Post Install uv	﻿2026-10-19T03:50:51.8240945Z Post job cleanup.
+Security Scanners & Unit Tests	Post Install uv	2026-10-19T03:50:51.9603172Z Pruning cache...
+Security Scanners & Unit Tests	Post Install uv	2026-10-19T03:50:51.9619166Z (node:2200) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Security Scanners & Unit Tests	Post Install uv	2026-10-19T03:50:51.9620697Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Security Scanners & Unit Tests	Post Install uv	2026-10-19T03:50:52.1033615Z Saving cache path: /home/runner/work/_temp/setup-uv-cache
+Security Scanners & Unit Tests	Post Install uv	2026-10-19T03:50:52.1586106Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/hdu-is-work1-api/hdu-is-work1-api --files-from manifest.txt --use-compress-program zstdmt
+Security Scanners & Unit Tests	Post Install uv	2026-10-19T03:50:52.5151678Z (node:2200) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+Security Scanners & Unit Tests	Post Install uv	2026-10-19T03:50:52.8066865Z Sent 1412 of 1412 (100.0%), 0.0 MBs/sec
+Security Scanners & Unit Tests	Post Install uv	2026-10-19T03:50:52.9489907Z cache saved with the key: setup-uv-1-x86_64-unknown-linux-gnu-3.12.15-2ae0c6a85117b463f515eeed92ae18404b0e2efa0ad69d18c110fd1d45d986da
+Security Scanners & Unit Tests	Post Set up Python 3.12	﻿2026-10-19T03:50:52.9619032Z Post job cleanup.
+Security Scanners & Unit Tests	Post Set up Python 3.12	2026-10-19T03:50:53.0965837Z (node:2223) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Security Scanners & Unit Tests	Post Set up Python 3.12	2026-10-19T03:50:53.1004909Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Security Scanners & Unit Tests	Post Checkout Source Code	﻿2026-10-19T03:50:53.1218558Z Post job cleanup.
+Security Scanners & Unit Tests	Post Checkout Source Code	2026-10-19T03:50:53.2376839Z [command]/usr/bin/git version
+Security Scanners & Unit Tests	Post Checkout Source Code	2026-10-19T03:50:53.2434843Z git version 2.55.0
+Security Scanners & Unit Tests	Post Checkout Source Code	2026-10-19T03:50:53.2503815Z Temporarily overriding HOME='/home/runner/work/_temp/c2f5d590-3694-433a-9190-a0821993ec3f' before making global git config changes
+Security Scanners & Unit Tests	Post Checkout Source Code	2026-10-19T03:50:53.2505304Z Adding repository directory to the temporary git global config as a safe directory
+Security Scanners & Unit Tests	Post Checkout Source Code	2026-10-19T03:50:53.2506854Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/hdu-is-work1-api/hdu-is-work1-api
+Security Scanners & Unit Tests	Post Checkout Source Code	2026-10-19T03:50:53.2579137Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Security Scanners & Unit Tests	Post Checkout Source Code	2026-10-19T03:50:53.2630068Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Security Scanners & Unit Tests	Post Checkout Source Code	2026-10-19T03:50:53.2977249Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Security Scanners & Unit Tests	Post Checkout Source Code	2026-10-19T03:50:53.3043650Z http.https://github.com/.extraheader
+Security Scanners & Unit Tests	Post Checkout Source Code	2026-10-19T03:50:53.3056688Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Security Scanners & Unit Tests	Post Checkout Source Code	2026-10-19T03:50:53.3117276Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Security Scanners & Unit Tests	Post Checkout Source Code	2026-10-19T03:50:53.3867012Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Security Scanners & Unit Tests	Post Checkout Source Code	2026-10-19T03:50:53.3983020Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Security Scanners & Unit Tests	Complete job	﻿2026-10-19T03:50:53.4539549Z Cleaning up orphan processes
+Security Scanners & Unit Tests	Complete job	2026-10-19T03:50:53.4818269Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, astral-sh/setup-uv@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
