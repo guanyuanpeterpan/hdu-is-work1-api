@@ -144,9 +144,41 @@ Both requests return 200 on 2.4.49. The first returns the container `/etc/passwd
 
 The fault is in `ap_normalize_path()` in `server/util.c`, called by `ap_process_request_internal()` in `server/request.c`.
 
-The function normalizes the path in one left-to-right pass. It collapses `/xx/../` only when it sees two literal dots at a segment start. It decodes `%2e` to `.` in the same pass, but only when the read pointer is on `%`.
+#### Vulnerable C source code (`server/util.c` in Apache 2.4.49):
 
-For the segment `/.%2e/`, the raw bytes at the segment start are `.` and `%`. The test for a second literal dot fails. The decoder then writes the decoded `.` next to the literal `.`, so `/../` appears after the check. The normalized path can then leave the document root.
+```c
+/* 1. Percent-decode unreserved characters (%2e -> '.') */
+if ((flags & AP_NORMALIZE_DECODE_UNRESERVED)
+        && path[l] == '%' && apr_isxdigit(path[l + 1])
+                          && apr_isxdigit(path[l + 2])) {
+    const char c = x2c(&path[l + 1]);
+    if (apr_isalnum(c) || (c && strchr("-._~", c))) {
+        l += 2;
+        path[l] = c; /* Decodes %2e into '.' */
+    }
+}
+...
+/* 2. Directory traversal collapse checks */
+if (w == 0 || IS_SLASH(path[w - 1])) {
+    if (path[l] == '.') {
+        /* Remove /xx/../ segments */
+        if (path[l + 1] == '.' && IS_SLASH_OR_NUL(path[l + 2])) {
+            /* Wind w back to remove the previous segment */
+            if (w > 1) {
+                do {
+                    w--;
+                } while (w && !IS_SLASH(path[w - 1]));
+            }
+            ...
+            continue;
+        }
+    }
+}
+```
+
+The function normalizes the path in one left-to-right pass using read pointer `l` and write pointer `w`. It collapses `/xx/../` only when it sees two literal dots at a segment start. It decodes `%2e` to `.` in the same pass, but only when the read pointer is on `%`.
+
+For the segment `/.%2e/`, the raw bytes at the segment start are `.` and `%`. The test for a second literal dot (`path[l + 1] == '.'`) fails. The first `.` is copied to `path[w]`. In the next loop iteration, the decoder encounters `%2e`, decodes it into `.`, and writes it to `path[w]`. Because it has already bypassed the segment-start boundary check, `/../` appears in the normalized path after the check. The normalized path escapes the document root.
 
 Apache 2.4.50 added a check for the second dot as `%2e` (SVN r1893775). The sequence `%%32%65` bypasses that check, because the first `%` is not followed by a hex digit. That case is CVE-2021-42013.
 
