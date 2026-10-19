@@ -105,16 +105,16 @@ FIGURES = {
         ],
     ),
     "fig5_ci_run": (
-        "GitHub Actions run 39196579679 (recorded CLI output)",
+        "GitHub Actions run 39197566103 (recorded CLI output)",
         [
-            ("cmd", "$ gh run view 39196579679"),
-            ("out", "✓ master Secure REST API CI Pipeline · 39196579679"),
+            ("cmd", "$ gh run view 39197566103"),
+            ("out", "✓ master Secure REST API CI Pipeline · 39197566103"),
             ("out", ""),
             ("out", "JOBS"),
-            ("ok", "✓ Security Scanners & Unit Tests in 21s (ID 117880554408)"),
+            ("ok", "✓ Security Scanners & Unit Tests in 21s (ID 117883519461)"),
             ("out", ""),
             ("dim", "View this run on GitHub:"),
-            ("dim", "https://github.com/guanyuanpeterpan/hdu-is-work1-api/actions/runs/39196579679"),
+            ("dim", "https://github.com/guanyuanpeterpan/hdu-is-work1-api/actions/runs/39197566103"),
         ],
     ),
     "fig6_sast_sca": (
