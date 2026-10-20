@@ -112,9 +112,6 @@ FIGURES = {
             ("out", ""),
             ("out", "JOBS"),
             ("ok", "✓ Security Scanners & Unit Tests in 19s (ID 118436996260)"),
-            ("out", ""),
-            ("dim", "View this run on GitHub:"),
-            ("dim", "https://github.com/guanyuanpeterpan/hdu-is-work1-api/actions/runs/39364162980"),
         ],
     ),
     "fig6_sast_sca": (
